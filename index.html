@@ -1,155 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EMK8FRK05D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content ="Denis Karandashev">
-    <meta name="description" content="An easy-to-use assistant for learning Flex CSS">
-    <meta property="og:title" content="Flex CSS Helper">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="FlexCSS.png">
-    <meta property="og:url" content="https://deniskarandashev.github.io/flex_css">
-    <meta property="og:description"
-        content="An easy-to-use assistant for learning Flex CSS">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="Flex CSS Helper">
+      gtag("config", "G-EMK8FRK05D");
+    </script>
+    <meta name="author" content="Denis Karandashev" />
+    <meta
+      name="description"
+      content="An easy-to-use assistant for learning Flex CSS"
+    />
+    <meta property="og:title" content="Flex CSS Helper" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="FlexCSS.png" />
+    <meta
+      property="og:url"
+      content="https://deniskarandashev.github.io/flex_css"
+    />
+    <meta
+      property="og:description"
+      content="An easy-to-use assistant for learning Flex CSS"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Flex CSS Helper" />
     <title>Flex CSS Helper</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <main>
-
-        <!-- 1 part -->
-        <section class="flex-row">
-            <!-- 1-1 card -->
-<form class="flex-item rule code-panel">
-    <div class="rule">
-        <div class="css-rule">
-            <div class="selector">.container {</div>
-            <div class="declarations">
+      <!-- 1 part -->
+      <section class="flex-row">
+        <!-- 1-1 card -->
+        <form class="flex-item rule code-panel">
+          <div class="rule">
+            <div class="css-rule">
+              <div class="selector">.container {</div>
+              <div class="declarations">
                 <div class="css-line">
-                    <span class="prop">display:</span>
-                    <select id="input_display_fieldset">
-                        <option value="block">block</option>
-                        <option value="flex">flex</option>
-                    </select>;
+                  <span class="prop">display:</span>
+                  <select id="input_display_fieldset">
+                    <option value="block">block</option>
+                    <option value="flex">flex</option></select
+                  >;
                 </div>
 
                 <div class="css-line with-flex">
-                    <span class="prop">flex-direction:</span>
-                    <select id="input_flex-direction_fieldset">
-                        <option value="row">row</option>
-                        <option value="row-reverse">row-reverse</option>
-                        <option value="column">column</option>
-                        <option value="column-reverse">column-reverse</option>
-                    </select>;
+                  <span class="prop">flex-direction:</span>
+                  <select id="input_flex-direction_fieldset">
+                    <option value="row">row</option>
+                    <option value="row-reverse">row-reverse</option>
+                    <option value="column">column</option>
+                    <option value="column-reverse">
+                      column-reverse
+                    </option></select
+                  >;
                 </div>
 
                 <div class="css-line with-flex">
-                    <span class="prop">justify-content:</span>
-                    <select id="input_justify-content_fieldset">
-                        <option value="start">start</option>
-                        <option value="end">end</option>
-                        <option value="flex-start">flex-start</option>
-                        <option value="flex-end">flex-end</option>
-                        <option value="center">center</option>
-                        <option value="space-between">space-between</option>
-                        <option value="space-around">space-around</option>
-                        <option value="space-evenly">space-evenly</option>
-                    </select>;
+                  <span class="prop">justify-content:</span>
+                  <select id="input_justify-content_fieldset">
+                    <option value="start">start</option>
+                    <option value="end">end</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="center">center</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                    <option value="space-evenly">space-evenly</option></select
+                  >;
                 </div>
 
                 <div class="css-line with-flex">
-                    <span class="prop">align-items:</span>
-                    <select id="input_align-items_fieldset">
-                        <option value="stretch">stretch</option>
-                        <option value="normal">normal</option>
-                        <option value="center">center</option>
-                        <option value="start">start</option>
-                        <option value="end">end</option>
-                        <option value="flex-start">flex-start</option>
-                        <option value="flex-end">flex-end</option>
-                        <option value="self-start">self-start</option>
-                        <option value="self-end">self-end</option>
-                    </select>;
+                  <span class="prop">align-items:</span>
+                  <select id="input_align-items_fieldset">
+                    <option value="stretch">stretch</option>
+                    <option value="normal">normal</option>
+                    <option value="center">center</option>
+                    <option value="start">start</option>
+                    <option value="end">end</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="self-start">self-start</option>
+                    <option value="self-end">self-end</option></select
+                  >;
                 </div>
+              </div>
+              <div class="selector">}</div>
             </div>
-            <div class="selector">}</div>
+
+            <div class="css-rule">
+              <div class="selector">.item-2 {</div>
+              <div class="declarations with-flex">
+                <div class="css-line">
+                  <span class="prop">align-self:</span>
+                  <select id="input_align-self_fieldset">
+                    <option value="auto">auto</option>
+                    <option value="stretch">stretch</option>
+                    <option value="center">center</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="baseline">baseline</option>
+                    <option value="revert">revert</option>
+                    <option value="revert-layer">revert-layer</option>
+                    <option value="unset">unset</option></select
+                  >;
+                </div>
+
+                <div class="css-line">
+                  <span class="prop">order:</span>
+                  <select id="input_order_fieldset">
+                    <option value="0">0</option>
+                    <option value="-1">-1</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="5">5</option>
+                    <option value="-5">-5</option>
+                    <option value="unset">unset</option></select
+                  >;
+                </div>
+
+                <div class="css-line">
+                  <span class="prop">margin-left:</span>
+                  <select id="input_margin-left_fieldset">
+                    <option value="0">0</option>
+                    <option value="auto">auto</option>
+                    <option value="20px">20px</option>
+                    <option value="unset">unset</option></select
+                  >;
+                </div>
+
+                <div class="css-line">
+                  <span class="prop">margin-top:</span>
+                  <select id="input_margin-top_fieldset">
+                    <option value="0">0</option>
+                    <option value="auto">auto</option>
+                    <option value="20px">20px</option>
+                    <option value="unset">unset</option></select
+                  >;
+                </div>
+              </div>
+              <div class="selector">}</div>
+            </div>
+          </div>
+        </form>
+
+        <!-- 1-2 card -->
+        <div class="flex-item visualisation card-1-2">
+          <div class="container_view">
+            <div class="div-p1 div-p1-1">1</div>
+            <div class="div-p1 div-p1-2">2</div>
+            <div class="div-p1 div-p1-3">3</div>
+            <div class="div-p1 div-p1-4">4</div>
+            <div class="div-p1 div-p1-5">5</div>
+          </div>
         </div>
 
-        <div class="css-rule">
-            <div class="selector">.item-2 {</div>
-            <div class="declarations with-flex">
-                <div class="css-line">
-                    <span class="prop">align-self:</span>
-                    <select id="input_align-self_fieldset">
-                        <option value="auto">auto</option>
-                        <option value="stretch">stretch</option>
-                        <option value="center">center</option>
-                        <option value="flex-start">flex-start</option>
-                        <option value="flex-end">flex-end</option>
-                        <option value="baseline">baseline</option>
-                        <option value="revert">revert</option>
-                        <option value="revert-layer">revert-layer</option>
-                        <option value="unset">unset</option>
-                    </select>;
-                </div>
-
-                <div class="css-line">
-                    <span class="prop">order:</span>
-                    <select id="input_order_fieldset">
-                        <option value="0">0</option>
-                        <option value="-1">-1</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="5">5</option>
-                        <option value="-5">-5</option>
-                        <option value="unset">unset</option>
-                    </select>;
-                </div>
-
-                <div class="css-line">
-                    <span class="prop">margin-left:</span>
-                    <select id="input_margin-left_fieldset">
-                        <option value="0">0</option>
-                        <option value="auto">auto</option>
-                        <option value="20px">20px</option>
-                        <option value="unset">unset</option>
-                    </select>;
-                </div>
-
-                <div class="css-line">
-                    <span class="prop">margin-top:</span>
-                    <select id="input_margin-top_fieldset">
-                        <option value="0">0</option>
-                        <option value="auto">auto</option>
-                        <option value="20px">20px</option>
-                        <option value="unset">unset</option>
-                    </select>;
-                </div>
-            </div>
-            <div class="selector">}</div>
-        </div>
-    </div>
-</form>
-
-
-            <!-- 1-2 card -->
-            <div class="flex-item visualisation card-1-2">
-                <div class="container_view">
-                    <div class="div-p1 div-p1-1">1</div>
-                    <div class="div-p1 div-p1-2">2</div>
-                    <div class="div-p1 div-p1-3">3</div>
-                    <div class="div-p1 div-p1-4">4</div>
-                    <div class="div-p1 div-p1-5">5</div>
-                </div>
-            </div>
-
-            <!-- 1-3 card -->
-            <div class="flex-item visualisation card-1-2">
-<pre class="code-block"><code>
+        <!-- 1-3 card -->
+        <div class="flex-item visualisation card-1-2">
+          <pre class="code-block"><code>
 <span class="tag">&lt;<span class="tag-name">div</span> <span class="attr">class</span>=<span class="value">"container"</span>&gt;</span>
     <span class="tag">&lt;<span class="tag-name">div</span>&gt;</span>1<span class="tag">&lt;/<span class="tag-name">div</span>&gt;</span>
     <span class="tag">&lt;<span class="tag-name">div</span> <span class="attr">class</span>=<span class="value">"item-2"</span>&gt;</span>2<span class="tag">&lt;/<span class="tag-name">div</span>&gt;</span>
@@ -158,93 +178,90 @@
     <span class="tag">&lt;<span class="tag-name">div</span>&gt;</span>5<span class="tag">&lt;/<span class="tag-name">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="tag-name">div</span>&gt;</span>
 </code></pre>
+        </div>
+      </section>
 
-            </div>
-        </section>
-
-
-        <!-- 2 part -->
-        <section class="flex-row">
-            <!-- 2-1 card -->
-          <form class="flex-item rule code-panel">
-  <div class="rule">
-    <div class="css-rule">
-      <div class="selector">.container {</div>
-      <div class="declarations">
-        <div class="css-line">
-          <span class="prop">display:</span>
-          <select id="input_display_fieldset_2" disabled>
-            <!--
+      <!-- 2 part -->
+      <section class="flex-row">
+        <!-- 2-1 card -->
+        <form class="flex-item rule code-panel">
+          <div class="rule">
+            <div class="css-rule">
+              <div class="selector">.container {</div>
+              <div class="declarations">
+                <div class="css-line">
+                  <span class="prop">display:</span>
+                  <select id="input_display_fieldset_2" disabled>
+                    <!--
             <option value="block">block</option>
             <option value="inline-block">inline-block</option>
             <option value="none">none</option>
             -->
-            <option value="flex" selected>flex</option>
-          </select>;
-        </div>
-
-        <div class="css-line">
-          <span class="prop">justify-content:</span>
-          <select id="input_justify-content_fieldset_2">
-            <option value="start">start</option>
-            <option value="end">end</option>
-            <option value="flex-start">flex-start</option>
-            <option value="flex-end">flex-end</option>
-            <option value="center">center</option>
-            <option value="space-between">space-between</option>
-            <option value="space-around">space-around</option>
-            <option value="space-evenly">space-evenly</option>
-          </select>;
-        </div>
-
-        <div class="css-line">
-          <span class="prop">flex-wrap:</span>
-          <select id="input_flex-wrap_fieldset_2">
-            <option value="wrap">wrap</option>
-            <option value="nowrap">nowrap</option>
-            <option value="wrap-reverse">wrap-reverse</option>
-          </select>;
-        </div>
-
-        <div class="css-line">
-          <span class="prop">align-content:</span>
-          <select id="input_align-content_fieldset_2">
-            <option value="stretch">stretch</option>
-            <option value="start">start</option>
-            <option value="end">end</option>
-            <option value="flex-start">flex-start</option>
-            <option value="flex-end">flex-end</option>
-            <option value="center">center</option>
-            <option value="space-between">space-between</option>
-            <option value="space-around">space-around</option>
-            <option value="space-evenly">space-evenly</option>
-          </select>;
-        </div>
-      </div>
-      <div class="selector">}</div>
-    </div>
-  </div>
-</form>
-
-
-            <!-- 2-2 card -->
-            <div class="flex-item visualisation card-2-2">
-                <div class="container_view_2">
-                    <div class="div-p2 div-p2-1">1</div>
-                    <div class="div-p2 div-p2-2">2</div>
-                    <div class="div-p2 div-p2-3">3</div>
-                    <div class="div-p2 div-p2-4">4</div>
-                    <div class="div-p2 div-p2-5">5</div>
-                    <div class="div-p2 div-p2-6">6</div>
-                    <div class="div-p2 div-p2-7">7</div>
-                    <div class="div-p2 div-p2-8">8</div>
-                    <div class="div-p2 div-p2-9">9</div>
+                    <option value="flex" selected>flex</option></select
+                  >;
                 </div>
-            </div>
 
-            <!-- 2-3 card -->
-            <div class="flex-item visualisation card-1-2">
-<pre class="code-block"><code>
+                <div class="css-line">
+                  <span class="prop">justify-content:</span>
+                  <select id="input_justify-content_fieldset_2">
+                    <option value="start">start</option>
+                    <option value="end">end</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="center">center</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                    <option value="space-evenly">space-evenly</option></select
+                  >;
+                </div>
+
+                <div class="css-line">
+                  <span class="prop">flex-wrap:</span>
+                  <select id="input_flex-wrap_fieldset_2">
+                    <option value="wrap">wrap</option>
+                    <option value="nowrap">nowrap</option>
+                    <option value="wrap-reverse">wrap-reverse</option></select
+                  >;
+                </div>
+
+                <div class="css-line">
+                  <span class="prop">align-content:</span>
+                  <select id="input_align-content_fieldset_2">
+                    <option value="stretch">stretch</option>
+                    <option value="start">start</option>
+                    <option value="end">end</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="center">center</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                    <option value="space-evenly">space-evenly</option></select
+                  >;
+                </div>
+              </div>
+              <div class="selector">}</div>
+            </div>
+          </div>
+        </form>
+
+        <!-- 2-2 card -->
+        <div class="flex-item visualisation card-2-2">
+          <div class="container_view_2">
+            <div class="div-p2 div-p2-1">1</div>
+            <div class="div-p2 div-p2-2">2</div>
+            <div class="div-p2 div-p2-3">3</div>
+            <div class="div-p2 div-p2-4">4</div>
+            <div class="div-p2 div-p2-5">5</div>
+            <div class="div-p2 div-p2-6">6</div>
+            <div class="div-p2 div-p2-7">7</div>
+            <div class="div-p2 div-p2-8">8</div>
+            <div class="div-p2 div-p2-9">9</div>
+          </div>
+        </div>
+
+        <!-- 2-3 card -->
+        <div class="flex-item visualisation card-1-2">
+          <pre class="code-block"><code>
 <span class="tag">&lt;<span class="tag-name">div</span> <span class="attr">class</span>=<span class="value">"container"</span>&gt;</span>
     <span class="tag">&lt;<span class="tag-name">div</span>&gt;</span>1<span class="tag">&lt;/<span class="tag-name">div</span>&gt;</span>
     <span class="tag">&lt;<span class="tag-name">div</span>&gt;</span>2<span class="tag">&lt;/<span class="tag-name">div</span>&gt;</span>
@@ -257,11 +274,9 @@
     <span class="tag">&lt;<span class="tag-name">div</span>&gt;</span>9<span class="tag">&lt;/<span class="tag-name">div</span>&gt;</span>
 <span class="tag">&lt;/<span class="tag-name">div</span>&gt;</span>
 </code></pre>
-            </div>
-        </section>
-
+        </div>
+      </section>
     </main>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
