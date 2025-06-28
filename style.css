@@ -1,3 +1,7 @@
+body {
+  background-color: #444;
+}
+
 main {
   margin: 0 auto;
 }
@@ -10,18 +14,18 @@ fieldset {
   min-width: 50px;
   min-height: 50px;
   font-size: 2em;
-  background: lime;
+  background: seagreen;
   border: 1px solid;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .div-p2 {
   min-width: 90px;
   min-height: 90px;
   font-size: 2em;
-  background: lime;
+  background: seagreen;
   border: 1px solid;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .card-1-2 > div {
@@ -29,7 +33,7 @@ fieldset {
   flex-direction: row;
   justify-content: start;
   align-items: stretch;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   background-color: beige;
   height: 400px;
 }
@@ -42,7 +46,7 @@ fieldset {
   width: 100%;
   height: 100%;
   display: flex;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   background-color: beige;
   flex-direction: row;
   flex-wrap: wrap;
@@ -73,7 +77,7 @@ select {
 }
 
 .flex-item {
-  border: 1px blue solid;
+  border: 3px gray solid;
   border-radius: 10px;
   padding: 10px;
   margin: 5px;
