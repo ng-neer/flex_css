@@ -1,6 +1,5 @@
 main {
   margin: 0 auto;
-  width: 1400px;
 }
 
 fieldset {
@@ -32,7 +31,6 @@ fieldset {
   align-items: stretch;
   border-radius: 5px;
   background-color: beige;
-  width: 400px;
   height: 400px;
 }
 
@@ -64,10 +62,6 @@ h2 {
   margin: 0;
 }
 
-.flex-item {
-  font-size: 1.3rem;
-}
-
 select {
   font-size: 0.8em;
 }
@@ -83,7 +77,7 @@ select {
   border-radius: 10px;
   padding: 10px;
   margin: 5px;
-  width: 400px;
+  width: 500px;
   height: 400px;
 }
 
@@ -118,4 +112,50 @@ select {
 
 .code-block .value {
   color: #ce9178;
+}
+
+.code-panel {
+  min-width: fit-content;
+  background: #1e1e1e;
+  border-radius: 8px;
+  color: #d4d4d4;
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+}
+
+.css-rule {
+  margin-bottom: 1.5rem;
+}
+
+.selector {
+  color: #569cd6;
+  font-weight: bold;
+  margin: 0.3rem 0;
+}
+
+.declarations {
+  padding-left: 20px;
+}
+
+.css-line {
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.prop {
+  color: #9cdcfe;
+  width: 220px;
+  display: inline-block;
+}
+
+.css-line select {
+  background: #2d2d2d;
+  color: #d4d4d4;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: inherit;
+  font-size: inherit;
 }
