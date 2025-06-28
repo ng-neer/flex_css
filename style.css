@@ -1,88 +1,121 @@
 main {
-    margin: 0 auto;
-    width: 1400px;
+  margin: 0 auto;
+  width: 1400px;
 }
+
 fieldset {
-    border: none;
+  border: none;
 }
 
 .div-p1 {
-    min-width: 50px;
-    min-height: 50px;
-    font-size: 2em;
-    background: lime;
-    border: 1px solid;
-    border-radius: 5px;
+  min-width: 50px;
+  min-height: 50px;
+  font-size: 2em;
+  background: lime;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
 .div-p2 {
-    min-width: 90px;
-    min-height: 90px;
-    font-size: 2em;
-    background: lime;
-    border: 1px solid;
-    border-radius: 5px;
+  min-width: 90px;
+  min-height: 90px;
+  font-size: 2em;
+  background: lime;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
-
-.card-1-2>div {
-    display: block;
-    flex-direction: row;
-    justify-content: start;
-    align-items: stretch;
-    border-radius: 5px;
-    background-color: beige;
-    width: 400px;
-    height: 400px;
+.card-1-2 > div {
+  display: block;
+  flex-direction: row;
+  justify-content: start;
+  align-items: stretch;
+  border-radius: 5px;
+  background-color: beige;
+  width: 400px;
+  height: 400px;
 }
 
 .div-p1-2 {
-    background: red;
+  background: red;
 }
 
-.card-2-2>div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    border-radius: 5px;
-    background-color: beige;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: stretch;
-    overflow: hidden;
+.card-2-2 > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 5px;
+  background-color: beige;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  overflow: hidden;
 }
 
 .css-body {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-.css-body>* {
-    margin: 2px;
+.css-body > * {
+  margin: 2px;
 }
 
 h2 {
-    margin: 0;
+  margin: 0;
 }
 
 .flex-item {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 select {
-    font-size: .8em;
+  font-size: 0.8em;
 }
 
 .flex-row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .flex-item {
-    border: 1px blue solid;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
-    width: 400px;
-    height: 400px;
+  border: 1px blue solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  width: 400px;
+  height: 400px;
+}
+
+.default {
+  font-size: bold;
+}
+
+.code-block {
+    margin: 0;
+  height: 100%;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 0 1em;
+  border-radius: 6px;
+  font-family: "Courier New", monospace;
+  font-size: 1.2rem;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+
+.code-block .tag {
+  color: #569cd6;
+}
+
+.code-block .tag-name {
+  color: #dcdcaa;
+}
+
+.code-block .attr {
+  color: #9cdcfe;
+}
+
+.code-block .value {
+  color: #ce9178;
 }

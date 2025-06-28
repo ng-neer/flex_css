@@ -79,4 +79,23 @@ function changeFromCSSToJSStyle(name) {
     }
 }
 
+// disable controls if not flex
+const displaySelect = document.getElementById('input_display_fieldset');
+const flexDirectionSelect = document.getElementById('input_flex-direction_fieldset');
+const withFlex = document.querySelectorAll('.with-flex');
+
+function updateFlexDirectionState() {
+  const isFlex = displaySelect.value === 'flex';
+  flexDirectionSelect.disabled = !isFlex;
+
+  withFlex.forEach(el => {
+    el.disabled = !isFlex;
+  })
+}
+
+displaySelect.addEventListener('change', () => {
+  updateFlexDirectionState();
+});
+
+updateFlexDirectionState();
 calcStyle();
