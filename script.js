@@ -89,7 +89,10 @@ function updateFlexDirectionState() {
   flexDirectionSelect.disabled = !isFlex;
 
   withFlex.forEach(el => {
-    el.disabled = !isFlex;
+    // el.hidden = !isFlex;
+    // el.getAttribute('display') = 'none'
+    // el.setAttribute('display', 'none')
+    el.style.display = isFlex ? '' : 'none';
   })
 }
 
